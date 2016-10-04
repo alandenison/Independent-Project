@@ -50,5 +50,10 @@ namespace CustomerService.Controllers
 
             return RedirectToAction("Details", new { id = line.Id });
         }
+        public IActionResult Details(int id)
+        {
+            Line line = _db.Lines.FirstOrDefault(n => n.Id == id);
+            return View(line);
+        }
     }
 }

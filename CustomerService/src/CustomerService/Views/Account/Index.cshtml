@@ -3,8 +3,10 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
+@using System.Security.Claims
 <h2>Customer Service App</h2>
 <hr />
+
 @if (User.Identity.IsAuthenticated)
 {
     <p>Hello @User.Identity.Name!</p>
@@ -12,6 +14,8 @@
     {
         <input type="submit" class="btn btn-default" value="Log out" />
     }
+
+    <a href="/Line/Create">New Product Line</a>
 }
 else
 {
