@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Identity;
 using CustomerService.Models;
 using System.Threading.Tasks;
 using CustomerService.ViewModels;
+using BasicAuthentication.Models;
 
 namespace CustomerService.Controllers
 {

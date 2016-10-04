@@ -6,6 +6,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore;
 using CustomerService.Models;
+using BasicAuthentication.Models;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 
 namespace CustomerService
